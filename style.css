@@ -25,7 +25,6 @@ body {
   padding: 0 18px;
 }
 
-/* Header */
 header {
   background: var(--bg);
   box-shadow: var(--shadow);
@@ -90,7 +89,9 @@ nav a:hover {
   color: var(--accent2);
   margin-bottom: 13px;
 }
-.hero-info h2 span {font-size:1rem; color:var(--text);}
+.hero-info h2 span {
+  font-size:1rem; color:var(--text);
+}
 .hero-info p { 
   font-size: 1.08rem; 
   color: var(--muted); 
@@ -126,19 +127,21 @@ nav a:hover {
   transform: scale(1.06);
 }
 
-.hero-pic{
+.hero-pic {
   min-width: 160px;
   text-align: center;
 }
-.hero-pic img{
+.hero-pic img {
   width:130px; height:130px; border-radius:50%;
   border:3px solid var(--accent2);
   box-shadow: var(--shadow);
   background: var(--card-bg);
 }
+.icon {
+  width:30px; height:30px; object-fit:contain; opacity:0.82; transition:opacity .16s, transform .16s;
+}
 .social { margin-top:10px; display: flex; gap:17px;}
-.social img { width:30px; height:30px; opacity:0.8; transition:opacity .16s, transform .19s;}
-.social img:hover { opacity:1; transform:scale(1.18); }
+.social .icon:hover { opacity:1; transform:scale(1.18); }
 
 /* General Section */
 .section { padding: 65px 0 5px;}
@@ -178,7 +181,6 @@ nav a:hover {
   transition: transform .22s, box-shadow .22s;
 }
 .skill-card h3 { color:var(--accent2); font-size:1.09rem; margin-bottom: 5px;}
-
 .skill-card:hover {
   box-shadow:0 5px 24px rgba(255,106,193,0.13);
   transform:translateY(-6px) scale(1.04);
@@ -231,7 +233,6 @@ footer {
 }
 footer .accent { color:var(--accent2); font-weight:700; }
 
-/* Responsive */
 @media(max-width:810px){
   .hero-flex{flex-direction:column;align-items:flex-start;}
   .hero-pic{margin-top:17px;}
