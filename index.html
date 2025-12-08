@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Naman Kumar - Cybersecurity & ML Portfolio</title>
+    <title>Naman Kumar - Cyber & ML Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
     <header>
         <div class="container">
-            <a href="#" class="logo">NAMAN KUMAR</a>
+            <a href="#" class="logo">NAMAN KUMAR <span class="accent-text">./</span></a>
             <nav>
                 <a href="#home">Home</a>
                 <a href="#about">About</a>
@@ -26,7 +26,7 @@
 
     <section id="home" class="hero">
         <div class="container">
-            <p>Hello, I'm</p>
+            <p class="greeting">// Hello World, I'm</p>
             <h1>Naman Kumar</h1>
             <h2>Cybersecurity Enthusiast | M.Tech. CSE Student | Aspiring Security Analyst</h2>
             <p class="tagline">Leveraging **Machine Learning** and **Network Expertise** to build secure, scalable solutions.</p>
@@ -35,21 +35,21 @@
                 <a href="Naman.pdf" class="btn secondary" target="_blank">Download Resume</a> 
             </div>
             <div class="social-links">
-                <a href="[Your Github Website URL]" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="https://linkedin.com/in/namankumar9898" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="[Your Github Website URL]" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://linkedin.com/in/namankumar9898" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="mailto:namanchoudhary1064@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
             </div>
         </div>
     </section>
 
     <section id="about" class="section">
         <div class="container">
-            <h2><i class="fas fa-user-graduate"></i> About Me</h2>
+            <h2 class="section-title"><span class="accent-text">01.</span> About Me</h2>
             <div class="about-content">
                 [cite_start]<p>I am a highly motivated and analytical **Master's of Technology (M.Tech.) student** in Computer Science and Engineering (CSE) at Himachal Pradesh Technical University, Hamirpur[cite: 1]. I have a strong foundational background, having completed my B.Tech. in CSE from Atal Bihari Vajpayee Govt. [cite_start]Institute of Engineering and Technology, Shimla[cite: 7]. My core expertise lies in the dynamic intersection of **Cybersecurity, Networking,** and **Machine Learning/Artificial Intelligence**.</p>
                 
                 <h3>Expertise Snapshot</h3>
-                <p>I apply hands-on skills in several technical domains:</p>
-                <ul>
+                <ul class="expertise-list">
                     [cite_start]<li>**Cybersecurity & Analysis:** Proficient in **Vulnerability Analysis** (SQLi, VAPT Fundamentals)[cite: 40]. [cite_start]Experience includes practicing real SOC workflows [cite: 13] [cite_start]and analyzing web activity logs to identify suspicious behavior[cite: 12].</li>
                     [cite_start]<li>**Log Analysis & Forensics:** Practical experience analyzing system, firewall, and web server logs to detect brute-force attacks and suspicious IP behavior [cite: 23] [cite_start]using tools like **Kali Linux, Wireshark, Grep/Awk, and Fail2ban**[cite: 24, 42].</li>
                     [cite_start]<li>**Programming & ML:** Proficient in **Python, C/C++, Java, and SQL**[cite: 38]. [cite_start]Developed ML modules for disease prediction using **Python/Flask** for the Medi-Oracle project[cite: 33, 34].</li>
@@ -57,16 +57,17 @@
                 </ul>
 
                 <h3>Key Highlights & Achievements</h3>
-                <ul>
+                <ul class="achievements-list">
                     [cite_start]<li>Secured **2nd Position** in Chaitanya's CTF 2025 (National-level Cyber Security Hackathon)[cite: 56].</li>
                     [cite_start]<li>Completed industry job simulations with **Deloitte Australia** [cite: 10, 66] [cite_start]and **Mastercard**[cite: 14, 67].</li>
                     [cite_start]<li>**UGC-NET (AP) Qualified**[cite: 58].</li>
                     [cite_start]<li>Received **Merit Scholarship for Academic Excellence** from the Government of Himachal Pradesh[cite: 54].</li>
                 </ul>
+
                 <div class="education-summary">
                     <h3>Education Snapshot</h3>
                     <ul>
-                        <li><i class="fas fa-graduation-cap"></i> **M.Tech. (CSE)[cite_start]**, Himachal Pradesh Technical University, Hamirpur (2024-Present, 8.16 CGPA Current) [cite: 7]</li>
+                        <li><i class="fas fa-microchip"></i> **M.Tech. (CSE)[cite_start]**, Himachal Pradesh Technical University, Hamirpur (2024-Present, 8.16 CGPA Current) [cite: 7]</li>
                         <li><i class="fas fa-graduation-cap"></i> **B.Tech. (CSE)[cite_start]**, ABVGIET, Shimla (2020-2024, 8.14 CGPA) [cite: 7]</li>
                     </ul>
                 </div>
@@ -74,29 +75,34 @@
         </div>
     </section>
 
-    <section id="skills" class="section dark-bg">
+    <section id="skills" class="section">
         <div class="container">
-            <h2><i class="fas fa-laptop-code"></i> Technical Skills</h2>
+            <h2 class="section-title"><span class="accent-text">02.</span> Technical Skills</h2>
             <div class="skills-grid">
                 <div class="skill-category">
+                    <i class="fas fa-code"></i>
                     <h3>Programming</h3>
-                    [cite_start]<p>C/C++, Python, Java, SQL, Bash [cite: 38]</p>
+                    [cite_start]<p>C/C++, Python [cite: 38][cite_start], Java [cite: 38][cite_start], SQL [cite: 38][cite_start], Bash [cite: 38]</p>
                 </div>
                 <div class="skill-category">
+                    <i class="fas fa-shield-alt"></i>
                     <h3>Security & Tools</h3>
                     [cite_start]<p>Vulnerability Analysis (SQLi, VAPT Fundamentals), Log Analysis, Honey Ports [cite: 40][cite_start], Wireshark, Nmap, Burp Suite, Metasploit, Linux [cite: 42]</p>
                 </div>
                 <div class="skill-category">
+                    <i class="fas fa-network-wired"></i>
                     <h3>Networking</h3>
                     [cite_start]<p>TCP/IP, OSI Model, Subnetting, LAN/WAN, DHCP/DNS, Routing [cite: 39]</p>
                 </div>
                 <div class="skill-category">
+                    <i class="fas fa-brain"></i>
                     <h3>ML/AI & Frameworks</h3>
                     [cite_start]<p>Pandas, Numpy, scikit-learn, Keras, Streamlit, Flask [cite: 43][cite_start], Machine Learning, Artificial Intelligence [cite: 36]</p>
                 </div>
                 <div class="skill-category">
+                    <i class="fas fa-globe"></i>
                     <h3>Web & OS</h3>
-                    [cite_start]<p>HTML/CSS [cite: 44][cite_start], Linux, Windows [cite: 36, 42]</p>
+                    [cite_start]<p>HTML/CSS [cite: 44][cite_start], Linux [cite: 36, 42][cite_start], Windows [cite: 36, 42]</p>
                 </div>
             </div>
         </div>
@@ -104,72 +110,76 @@
 
     <section id="projects" class="section">
         <div class="container">
-            <h2><i class="fas fa-project-diagram"></i> Key Projects</h2>
+            <h2 class="section-title"><span class="accent-text">03.</span> Key Projects</h2>
             <div class="project-grid">
                 <div class="project-card">
-                    <h3>Enterprise Network Security Lab</h3>
+                    <h3><i class="fas fa-lock"></i> Enterprise Network Security Lab</h3>
                     [cite_start]<p>Configured key network services (VLANs, DHCP, DNS, routing, firewall rules, and VPN) to simulate a complete enterprise network environment[cite: 20].</p>
                     [cite_start]<p class="tools-used">**Tools:** Cisco Packet Tracer, VLAN Configuration, Routing & Firewall, VPN Setup [cite: 21]</p>
+                    <a href="#" class="project-link">View Details</a>
                 </div>
                 <div class="project-card">
-                    <h3>SQL injection (SQLi) Penetration Testing</h3>
+                    <h3><i class="fas fa-bug"></i> SQL injection (SQLi) Penetration Testing</h3>
                     [cite_start]<p>Executed SQLi attacks on University web apps, identified vulnerable parameters, and documented the exploitation process[cite: 26]. [cite_start]Authored a report detailing mitigation advice like Parameterized Queries and Input Sanitization[cite: 31].</p>
                     [cite_start]<p class="tools-used">**Tools:** Kali Linux, Burp Suite, SQLMap [cite: 27]</p>
+                    <a href="#" class="project-link">View Details</a>
                 </div>
                 <div class="project-card">
-                    <h3>Log Analysis & Threat Detection</h3>
+                    <h3><i class="fas fa-search"></i> Log Analysis & Threat Detection</h3>
                     [cite_start]<p>Analyzed system, firewall, and web server logs to detect brute-force, malware-like traffic, and suspicious IP behavior[cite: 23].</p>
                     [cite_start]<p class="tools-used">**Tools:** Kali Linux, Wireshark, Grep/Awk, Fail2ban [cite: 24]</p>
+                    <a href="#" class="project-link">View Details</a>
                 </div>
                 <div class="project-card">
-                    <h3>Medi-Oracle: A Disease Predictor</h3>
-                    [cite_start]<p>Developed Machine Learning modules (using Python/Flask) for the prediction of Heart, Kidney, and Diabetes[cite: 33]. [cite_start]Integrating early-stage image dataset support for Brain Tumor Analysis[cite: 33].</p>
+                    <h3><i class="fas fa-heartbeat"></i> Medi-Oracle: A Disease Predictor</h3>
+                    <p>Developed Machine Learning modules (using Python/Flask) for the prediction of Heart, Kidney, and Diabetes. [cite_start]Integrating early-stage image dataset support for Brain Tumor Analysis[cite: 33].</p>
                     [cite_start]<p class="tools-used">**Tools:** Python, HTML/CSS, Flask, Machine Learning [cite: 34]</p>
+                    <a href="#" class="project-link">View Details</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="experience" class="section dark-bg">
+    <section id="experience" class="section">
         <div class="container">
-            <h2><i class="fas fa-medal"></i> Experience & Achievements</h2>
+            <h2 class="section-title"><span class="accent-text">04.</span> Experience & Certifications</h2>
             <div class="experience-grid">
                 <div class="experience-item">
-                    <h3>Industry Job Simulations (Forage)</h3>
+                    <h3>Industry Simulations</h3>
                     <ul>
-                        [cite_start]<li>**Deloitte Australia - Cyber Job Simulation:** Practiced real SOC workflows by detecting threats, interpreting incidents, and identifying abnormal user activity[cite: 13].</li>
-                        [cite_start]<li>**Mastercard - Cybersecurity Virtual Experience:** Identified phishing attempts and assessed social engineering risks [cite: 17][cite_start]; contributed to improving employee security training procedures[cite: 17].</li>
+                        [cite_start]<li><i class="fas fa-building"></i> **Deloitte Australia - Cyber Job Simulation:** Practiced real SOC workflows by detecting threats, interpreting incidents, and identifying abnormal user activity[cite: 13].</li>
+                        [cite_start]<li><i class="fas fa-building"></i> **Mastercard - Cybersecurity Virtual Experience:** Identified phishing attempts and assessed social engineering risks; contributed to improving employee security training procedures[cite: 17].</li>
                     </ul>
                 </div>
                 <div class="experience-item">
                     <h3>Certifications & Achievements</h3>
                     <ul>
-                        [cite_start]<li>UGC-NET (AP) Qualified[cite: 58].</li>
-                        [cite_start]<li>Secured **2nd Position** in Chaitanya's CTF 2025 (National-level Cyber Security Hackathon)[cite: 56].</li>
-                        [cite_start]<li>**C-DAC** Certification on Advanced AI using Machine Learning & Deep Learning[cite: 63].</li>
-                        [cite_start]<li>**CISCO** Certification on Introduction to Cyber Security[cite: 65].</li>
+                        [cite_start]<li><i class="fas fa-certificate"></i> **C-DAC** Certification on Advanced AI using Machine Learning & Deep Learning[cite: 63].</li>
+                        [cite_start]<li><i class="fas fa-certificate"></i> **CISCO** Certification on Introduction to Cyber Security[cite: 65].</li>
+                        [cite_start]<li><i class="fas fa-trophy"></i> **UGC-NET (AP) Qualified**[cite: 58].</li>
+                        [cite_start]<li><i class="fas fa-trophy"></i> Secured **2nd Position** in Chaitanya's CTF 2025[cite: 56].</li>
                     </ul>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="contact" class="section">
+    <section id="contact" class="section contact-section">
         <div class="container">
-            <h2><i class="fas fa-envelope"></i> Get In Touch</h2>
-            <p>I am actively seeking opportunities in Cybersecurity, Networking, and ML/AI roles. Feel free to connect!</p>
+            <h2 class="section-title"><span class="accent-text">05.</span> Get In Touch</h2>
+            <p class="contact-text">I am actively seeking opportunities in Cybersecurity, Networking, and ML/AI roles. Feel free to connect via LinkedIn or email to discuss my projects or any potential openings!</p>
+            <a href="mailto:namanchoudhary1064@gmail.com" class="btn primary contact-btn">Say Hello</a>
             <div class="contact-details">
-                [cite_start]<p><i class="fas fa-map-marker-alt"></i> Himachal Pradesh Technical University, Hamirpur [cite: 1]</p>
+                [cite_start]<p><i class="fas fa-envelope-square"></i> namanchoudhary1064@gmail.com [cite: 3]</p>
+                [cite_start]<p><i class="fab fa-linkedin"></i> linkedin.com/in/namankumar9898 [cite: 5]</p>
                 [cite_start]<p><i class="fas fa-phone"></i> +91-8629079898 [cite: 2]</p>
-                [cite_start]<p><i class="fas fa-envelope"></i> <a href="mailto:namanchoudhary1064@gmail.com">namanchoudhary1064@gmail.com</a> [cite: 3]</p>
-                [cite_start]<p><i class="fab fa-linkedin"></i> <a href="https://linkedin.com/in/namankumar9898" target="_blank">linkedin.com/in/namankumar9898</a> [cite: 5]</p>
             </div>
         </div>
     </section>
 
     <footer>
         <div class="container">
-            <p>&copy; 2025 Naman Kumar. Designed with code.</p>
+            <p>&copy; 2025 Naman Kumar. Built from scratch with <span class="accent-text">Code.</span></p>
         </div>
     </footer>
 
