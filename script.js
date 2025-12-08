@@ -1,15 +1,12 @@
+// Smooth scrolling for nav links
 document.addEventListener('DOMContentLoaded', () => {
-    // Smooth scrolling for navigation links
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-            e.preventDefault();
-
-            const targetId = this.getAttribute('href');
-            if (targetId && targetId !== '#') {
-                document.querySelector(targetId).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            }
-        });
+  document.querySelectorAll('nav a[href^="#"]').forEach(link => {
+    link.addEventListener('click', function(e){
+      const target = document.querySelector(this.getAttribute('href'));
+      if(target){
+        e.preventDefault();
+        target.scrollIntoView({behavior:'smooth'});
+      }
     });
+  });
 });
