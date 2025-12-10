@@ -139,7 +139,11 @@ nav a:hover {
   text-align: center;
 }
 .hero-pic img {
-  border-radius:50%;
+  width: 300px; 
+  /* Sets the aspect ratio explicitly as width / height (55 / 73) */
+  aspect-ratio: 55 / 73; 
+  /* Ensures the height is automatically calculated to maintain the ratio */
+  height: auto; border-radius:50%;
   border:3px solid var(--accent2);
   box-shadow: var(--shadow);
   background: var(--card-bg);
