@@ -289,49 +289,92 @@ footer {
 }
 footer .accent { color:var(--accent2); font-weight:700; }
 
-.achievement-table-wrapper {
-  overflow-x: auto;
-  background: var(--card-bg);
-  border-radius: var(--card-radius);
-  box-shadow: var(--shadow);
+/* Put this in style.css */
+
+.achievement-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  gap: 28px;
   margin-top: 28px;
 }
 
-.achievement-table {
-  width: 100%;
-  border-collapse: collapse;
-  background: transparent;
-  color: var(--text);
+.ach-card {
+  background: var(--card-bg, #181C2F);
+  border-radius: 14px;
+  box-shadow: 0 5px 24px rgba(84,255,217,0.09);
+  padding: 24px 22px;
+  color: var(--text, #e4e4e4);
+  min-height: 250px;
+  display: flex;
+  flex-direction: column;
+  transition: box-shadow .17s, transform .18s;
+  position: relative;
+  overflow: hidden;
+}
+.ach-card:hover {
+  box-shadow: 0 7px 28px rgba(255,106,193,0.17), 0 0px 0px #fff;
+  transform: scale(1.03) translateY(-4px);
 }
 
-.achievement-table thead th {
-  background: rgba(40,50,70,0.98);
-  color: var(--accent);
-  padding: 15px 7px;
-  font-size: 1rem;
+.ach-head {
+  display: flex;
+  align-items: center;
+  gap: 17px;
+  margin-bottom: 7px;
+}
+
+.ach-icon img {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  background: rgba(84,255,217,0.12);
+  padding: 2px;
+  box-shadow: 0 2px 5px rgba(84,255,217,0.09);
+}
+
+.ach-title {
+  font-family: var(--font-sans, 'Montserrat', Arial, sans-serif);
+  font-size: 1.12rem;
   font-weight: 700;
-  border-bottom: 2px solid var(--accent2);
+  color: var(--accent2, #FF6AC1);
 }
-.achievement-table tbody td {
-  padding: 15px 9px;
-  border-bottom: 1px solid #232D49;
-  vertical-align: top;
-  font-size: .97rem;
+
+.ach-details {
+  margin-top: 11px;
+  font-size: 1rem;
 }
-.achievement-table tbody tr:last-child td {
-  border-bottom: none;
+
+.ach-desc {
+  font-size: 1.04rem;
+  margin-bottom:6px;
+  color: var(--accent, #54FFD9);
 }
-.achievement-table tbody tr:hover {
-  background: rgba(84,255,217,0.08);
+
+.ach-details strong {
+  color: var(--accent2, #FF6AC1);
+  font-weight: 700;
 }
-.achievement-table a img {
+
+.ach-metric {
+  color: var(--accent, #54FFD9);
+  font-weight: 700;
+}
+
+.ach-details a img {
   margin-left: 6px;
   vertical-align: middle;
-  opacity: 0.75;
+  opacity: .7;
   transition: opacity .17s;
 }
-.achievement-table a img:hover {
+.ach-details a img:hover {
   opacity: 1;
   filter: drop-shadow(0 1px 2px #54FFD9);
 }
-@media(max-width:600px){ .achievement-table th, .achievement-table td { font-size:.87rem; padding:8px 3px; } }
+
+@media(max-width: 800px) {
+  .achievement-cards {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+  .ach-head { gap: 12px; }
+}
