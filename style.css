@@ -80,8 +80,8 @@ nav a:hover {
   background: linear-gradient(115deg,#131935 55%,#181C2F 100%);
   padding: 65px 0 45px;
 }
+/* *** FIX: Removed fixed margin for better responsiveness across screen sizes *** */
 .hero-flex {
-  margin-left: 175px;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
@@ -264,7 +264,8 @@ nav a:hover {
 }
 
 @media(max-width:810px){
-  .hero-flex{flex-direction:column;align-items:flex-start;}
+  /* hero-flex will now stack elements on smaller screens */
+  .hero-flex{flex-direction:column;align-items:flex-start;} 
   .hero-pic{margin-top:17px;}
   .about-flex{flex-direction:column;}
 }
@@ -296,7 +297,7 @@ footer {
 }
 footer .accent { color:var(--accent2); font-weight:700; }
 
-/* Put this in style.css */
+/* Achievements */
 
 .achievement-cards {
   display: grid;
