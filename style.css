@@ -81,7 +81,7 @@ nav a:hover {
   padding: 65px 0 45px;
 }
 .hero-flex {
-  align: center;
+  margin-left: 175px;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
